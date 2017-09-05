@@ -5,7 +5,7 @@
     <title>MyMobile</title>
     <link rel="stylesheet" type="text/css" href="includes/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="includes/css/estilo.css">
-    <script src="includes/js/jquery-3.2.1.js"></script>
+    <script src=" https://code.jquery.com/jquery-3.1.1.min.js "></script>
     <script src="includes/js/script.js"></script>
 
   </head>
@@ -31,4 +31,3 @@
 	    </form>
 	  </div>
 	</nav>
-    
