@@ -1,15 +1,19 @@
 <form class="">
 	<div class=" form-group">
-		<label for="login">Login:</label>
-			<input type="text" class="form-control" id=""  placeholder="Login">
-	</div>
-	<div class=" form-group">
 		<label for="nome">Nome:</label>
 			<input type="text" class="form-control" id=""  placeholder="Nome">
 	</div>
-	<div class="form-group">
-		<label for="senha">Senha:</label>
-			<input type="password" class="form-control" id="" placeholder="Senha">
-	</div>
+		<div class=" form-group">
+			<label for="email">E-mail:</label>
+				<input type="email" class="form-control" id=""  placeholder="E-mail">
+		</div>
+			<div class="form-group">
+				<label for="login">Login:</label>
+					<input type="text" class="form-control" id="" placeholder="Login">
+			</div>
+				<div class="form-group">
+					<label for="senha">Senha:</label>
+						<input type="password" class="form-control" id="" placeholder="Senha">
+				</div>
 	<button type="submit" class="btn btn-outline-warning">Solicitar meu Cadastro</button>
 </form>
