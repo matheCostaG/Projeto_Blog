@@ -27,12 +27,14 @@ DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(45) DEFAULT NULL,
-  `senha` varchar(60) NOT NULL,
-  `login` varchar(32) NOT NULL,
+  `senha` varchar(32) NOT NULL,
+  `login` varchar(12) NOT NULL,
+  `email` varchar(60) NOT NULL,
   `ativado` tinyint(4) DEFAULT '0',
   `codigo` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `senha` (`senha`)
+  UNIQUE KEY `login` (`login`),
+  UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -82,4 +84,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-09-04 16:04:49
+-- Dump completed on 2017-09-05 14:22:54
