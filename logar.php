@@ -4,20 +4,22 @@ require_once "includes/header.php";
 ?>
 <div class="formulario">
   <div class="container ">
-    <div class="page-header">
+    <div class="page-header text-center">
       <h1>Administração</h1>
     </div>
     <div class="row">
+        <div class="col-md-3">
+        </div>
       <div class="col-md-6 ">
         <div class="c_formulario">
           <div id="conteudoForm">
             <form id="formulario">
               <div class="form-group">
-                <label for="email" >E-mail</label>
+                <label for="email" >E-mail:</label>
                 <input type="email" class="form-control" id=""  placeholder="E-mail">
               </div>
               <div class="form-group">
-                <label for="password">Senha</label>
+                <label for="password">Senha:</label>
                 <input type="password" class="form-control" id="" placeholder="Senha">
               </div>
               <button type="submit" class="btn btn-outline-info">Entrar</button>
