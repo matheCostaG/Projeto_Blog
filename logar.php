@@ -16,7 +16,7 @@ require_once "includes/header.php";
             <form id="formulario">
               <div class="form-group">
                 <label for="email" >E-mail:</label>
-                <input type="email" class="form-control" id=""  placeholder="E-mail">
+                <input type="email" name="email" class="form-control" id=""  placeholder="E-mail">
               </div>
               <div class="form-group">
                 <label for="password">Senha:</label>

@@ -1,10 +1,10 @@
 <?php
   class Solicitar{
     private $nome;
+    private $email;
     private $login;
     private $senha;
     private $ativado;
-    private $codigo;
 
 
     public function getNome(){
@@ -13,6 +13,15 @@
     public function setNome($nome){
       $this->nome = $nome;
     }
+
+
+    public function getEmail(){
+      return $this->email;
+    }
+    public function setEmail($email){
+      $this->email = $email;
+    }
+
     public function getLogin(){
       return $this->login;
     }
@@ -29,30 +38,28 @@
       return $this->ativado;
     }
     public function setAtivado($ativado){
-      $this->ativado = $atiavdo;
-    }
-    public function getCodigo(){
-      return $this->codigo;
-    }
-    public function setCodigo($codigo){
-      $this->codigo = uniqid(rand());
+      $this->ativado = $ativado;
     }
 
-    public function __construct($nome, $login, $senha){
+    public function __construct($nome,$email, $login, $senha){
       $this->setNome($nome);
+      $this->setEmail($email);
       $this->setLogin($login);
       $this->setSenha($senha);
       $this->setAtivado(0);
-      $this->setCodigo();
     }
 
     public function solicitarAdmin(){
-      
+      $conn = new mysqli("localhost", "root", "170s6612", "blog");
+      if($conn->connect_error){
+        echo "Erro na conexão com o banco";
+      }
+      $stmt = $conn->prepare("INSERT INTO admin(nome, senha, login, email, ativado) VALUES(?,?,?,?,?)");
+      $stmt->bind_param('ssssi',$this->getNome(), $this->getSenha(), $this->getLogin(), $this->getEmail(), $this->getAtivado());
+      if($stmt->execute()){
+        echo "DEU CERTINHO";
+      }
     }
-
-
-
-
   }
 
 
