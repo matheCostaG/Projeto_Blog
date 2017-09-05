@@ -1,3 +1,11 @@
 $(document).ready(function(){
-  alert("Jquery  funcionado");
+  $("#btn-formulario").click(function(){
+    //$("#formulario").css({"display": "none"});
+      $.ajax({
+        url: 'inserir.php',
+        success: function(data){
+          $('#conteudoForm').html(data);
+        }
+    });
+  });
 });
