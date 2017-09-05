@@ -31,7 +31,6 @@ CREATE TABLE `admin` (
   `login` varchar(12) NOT NULL,
   `email` varchar(60) NOT NULL,
   `ativado` tinyint(4) DEFAULT '0',
-  `codigo` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `login` (`login`),
   UNIQUE KEY `email` (`email`)
@@ -84,4 +83,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-09-05 14:22:54
+-- Dump completed on 2017-09-05 15:24:42
