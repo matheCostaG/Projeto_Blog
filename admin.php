@@ -1,6 +1,5 @@
 <?php
 require_once "includes/header.php";
-
 ?>
 <div class="formulario">
   <div class="container ">
@@ -13,17 +12,17 @@ require_once "includes/header.php";
       <div class="col-md-6 ">
         <div class="c_formulario">
           <div id="conteudoForm">
-            <form id="formulario">
+            <form id="formulario" method="post" action="entrar.php">
               <div class="form-group">
-                <label for="email" >E-mail:</label>
-                <input type="email" name="email" class="form-control" id=""  placeholder="E-mail">
+                <label for="email" >Login:</label>
+                <input type="text" name="login" class="form-control" id=""  placeholder="Login">
               </div>
               <div class="form-group">
                 <label for="password">Senha:</label>
-                <input type="password" class="form-control" id="" placeholder="Senha">
+                <input type="password" name="senha" class="form-control" id="" placeholder="Senha">
               </div>
               <button type="submit" class="btn btn-outline-info">Entrar</button>
-            </form>  
+            </form>
           </div>
       </div>
     </div>

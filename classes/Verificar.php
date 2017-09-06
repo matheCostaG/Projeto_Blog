@@ -1,8 +1,8 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
   class Verificar{
-    public function verificarEmail(){
+    public function verificarEmail($nome, $email, $senha, $login){
       /**
  * This example shows settings to use when sending via Google's Gmail servers.
  * This uses traditional id & password authentication - look at the gmail_xoauth.phps
@@ -18,7 +18,7 @@ require '../vendor/autoload.php';
   // 0 = off (for production use)
   // 1 = client messages
   // 2 = client and server messages
-  $mail->SMTPDebug = 2;
+  $mail->SMTPDebug = 0;
   //Set the hostname of the mail server
   $mail->Host = 'smtp.gmail.com';
   // use
@@ -31,20 +31,20 @@ require '../vendor/autoload.php';
   //Whether to use SMTP authentication
   $mail->SMTPAuth = true;
   //Username to use for SMTP authentication - use full email address for gmail
-  $mail->Username = "username@gmail.com";
+  $mail->Username = "mymobile.suporte@gmail.com";
   //Password to use for SMTP authentication
-  $mail->Password = "yourpassword";
+  $mail->Password = "mymobile123";
   //Set who the message is to be sent from
-  $mail->setFrom('from@example.com', 'First Last');
+  $mail->setFrom('mymobile.suporte@gmail.com', 'Conta de administração MyMoblie');
   //Set an alternative reply-to address
-  $mail->addReplyTo('replyto@example.com', 'First Last');
+  $mail->addReplyTo('mymobile.suporte@gmail.com', 'Suporte MyMoblie');
   //Set who the message is to be sent to
-  $mail->addAddress('whoto@example.com', 'John Doe');
+  $mail->addAddress($email, $nome);
   //Set the subject line
-  $mail->Subject = 'PHPMailer GMail SMTP test';
+  $mail->Subject = 'Senha e Login MyMobile';
   //Read an HTML message body from an external file, convert referenced images to embedded,
   //convert HTML into a basic plain-text alternative body
-  $mail->msgHTML(file_get_contents('contents.html'), dirname(__FILE__));
+  $mail->msgHTML("Olá $nome. Você é o novo administrador do MyMoblie este é seu login: $login e senha: $senha");
   //Replace the plain text body with one created manually
   $mail->AltBody = 'This is a plain-text message body';
   //Attach an image file
@@ -53,7 +53,7 @@ require '../vendor/autoload.php';
   if (!$mail->send()) {
       echo "Mailer Error: " . $mail->ErrorInfo;
   } else {
-      echo "Message sent!";
+      echo "<script>alert('Mensagem enviada com sucesso');</script>";
       //Section 2: IMAP
       //Uncomment these to save your message in the 'Sent Mail' folder.
       #if (save_mail($mail)) {

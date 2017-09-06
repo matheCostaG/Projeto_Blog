@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 	require_once "includes/header.php";
 ?>
@@ -15,14 +15,12 @@
 					<button class="btn btn-outline-info"><i class="material-icons">perm_media</i></button>
 				</div>
 			</div>
-	</div>
-	
-	
+	</div>	
 </div>
 
 
-<?php 
-	
+<?php
+
 	require_once "includes/footer.php"
 
 ?>
