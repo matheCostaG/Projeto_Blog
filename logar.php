@@ -23,8 +23,7 @@ require_once "includes/header.php";
                 <input type="password" class="form-control" id="" placeholder="Senha">
               </div>
               <button type="submit" class="btn btn-outline-info">Entrar</button>
-            </form>  <br>
-              <button class="btn btn-outline-dark" id="btn-formulario">Torna-se Administrador</button>
+            </form>  
           </div>
       </div>
     </div>
