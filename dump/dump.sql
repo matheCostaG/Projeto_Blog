@@ -30,7 +30,6 @@ CREATE TABLE `admin` (
   `senha` varchar(32) NOT NULL,
   `login` varchar(12) NOT NULL,
   `email` varchar(60) NOT NULL,
-  `ativado` tinyint(4) DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `login` (`login`),
   UNIQUE KEY `email` (`email`)
@@ -55,9 +54,10 @@ DROP TABLE IF EXISTS `publicacao`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `publicacao` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` text NOT NULL,
   `texto` text,
   `img_postagem` varchar(12) DEFAULT NULL,
-  `id_admin` int(11) DEFAULT NULL,
+  `id_admin` int(11) NOT NULL,
   `data` date DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `id_admin` (`id_admin`),
@@ -83,4 +83,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-09-05 15:24:42
+-- Dump completed on 2017-09-06 13:55:24
