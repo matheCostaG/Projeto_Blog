@@ -7,4 +7,18 @@ $(document).ready(function(){
         }
     });
   });
+
+  function carregar(){
+    $.ajax({
+      url: 'carregar_postagem.php',
+      success: function(data){
+        $('#carregar_postagem').html(data);
+      }
+
+    });
+  }
+
+
+
+carregar();
 });

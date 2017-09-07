@@ -13,15 +13,12 @@ require_once "classes/config.php";
     public function setNome($nome){
       $this->nome = $nome;
     }
-
-
     public function getEmail(){
       return $this->email;
     }
     public function setEmail($email){
       $this->email = $email;
     }
-
     public function getLogin(){
       return $this->login;
     }
@@ -56,8 +53,6 @@ require_once "classes/config.php";
         $admin = new Verificar();
         $admin->verificarEmail($this->getNome(), $this->getEmail(), $this->getSenha(), $this->getLogin());
       }
-
-
     }
 
     public static function entrar($login, $senha){
@@ -71,16 +66,39 @@ require_once "classes/config.php";
         $result = $stmt->get_result();
           if($result->num_rows == 1){
             $row = $result->fetch_assoc();
-            $_SESSION['nome'] = $row['nome'];
+            $_SESSION['id'] = $row['id'];
             header("Location: index_admin.php");
           }else{
             header("Location: admin.php");
           }
-
+    }
+    public static function adicionarPostagem($titulo, $texto, $data, $id, $imagem){
+      $conn = new mysqli("localhost", "root", "170s6612", "blog");
+      if($conn->connect_error){
+        echo "Erro ao conectar ao banco";
+      }
+      $stmt = $conn->prepare("INSERT INTO publicacao (titulo, texto, id_admin, data) VALUES(?,?,?,?)");
+      $stmt->bind_param('ssis', $titulo, $texto, $id, $data);
+      if($stmt->execute()){
+        echo "<script>alert(Dados inseridos);</script>";
+      }
+      $idPubli = $stmt->insert_id;
+      if($imagem['error']){
+        echo "Error";
+        die();
+      }
+      $pastaImagens = 'imagens';
+      if(!is_dir($pastaImagens)){
+        mkdir($pastaImagens);
+      }
+      $new_path = $pastaImagens. DIRECTORY_SEPARATOR.$idPubli.".jpg";
+      if(move_uploaded_file($imagem['tmp_name'], $new_path)){
+        $imagem_postagem = $idPubli.".jpg";
+        $conn->query("UPDATE publicacao SET img_postagem = '$imagem_postagem' WHERE id = $idPubli");
+      }else{
+        echo "Erro no upload da imagem";
+      }
     }
 
-
   }
-
-
  ?>

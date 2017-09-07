@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if($_SESSION['nome'] == ""){
+	if($_SESSION['id'] == ""){
 		header("Location: index.php");
 	}
 ?>
@@ -8,7 +8,7 @@
 <form class="" method="post" action="cadastrar.php">
 	<div class=" form-group">
 		<label for="nome">Nome:</label>
-			<input type="text" name="nome" class="form-control" id=""  placeholder="Nome">
+			<input type="text" name="nome" class="form-control" id="" placeholder="Nome">
 	</div>
 		<div class=" form-group">
 			<label for="email">E-mail:</label>
