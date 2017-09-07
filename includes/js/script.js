@@ -1,9 +1,9 @@
 $(document).ready(function(){
-  $("#btn-formulario").click(function(){
+  $("#btn-admin").click(function(){
       $.ajax({
-        url: 'inserir.php',
+        url: 'form_cadastrar.php',
         success: function(data){
-          $('#conteudoForm').html(data);
+          $('#div_admin').html(data);
         }
     });
   });

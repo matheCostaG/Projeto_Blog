@@ -1,4 +1,11 @@
-<form class="" method="post" action="requisitar.php">
+<?php
+	session_start();
+	if($_SESSION['nome'] == ""){
+		header("Location: index.php");
+	}
+?>
+
+<form class="" method="post" action="cadastrar.php">
 	<div class=" form-group">
 		<label for="nome">Nome:</label>
 			<input type="text" name="nome" class="form-control" id=""  placeholder="Nome">
@@ -15,5 +22,5 @@
 					<label for="senha">Senha:</label>
 						<input type="password" name="senha" class="form-control" id="" placeholder="Senha">
 				</div>
-	<button type="submit" class="btn btn-outline-warning">Solicitar meu Cadastro</button>
+	<button type="submit" class="btn btn-outline-warning">Adicionar</button>
 </form>

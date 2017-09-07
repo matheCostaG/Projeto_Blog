@@ -1,4 +1,5 @@
 <?php
+require_once "classes/config.php";
   class Usuario{
     private $nome;
     private $email;
@@ -41,7 +42,7 @@
       $this->setSenha($senha);
     }
 
-    public function solicitarAdmin(){
+    public function cadastrarAdmin(){
       $conn = new mysqli("localhost", "root", "170s6612", "blog");
       if($conn->connect_error){
         echo "Erro na conexão com o banco";
@@ -52,9 +53,11 @@
       $stmt->bind_param('ssss',$this->getNome(), $senhaAdm, $this->getLogin(), $this->getEmail());
       if($stmt->execute()){
         echo "<script>alert('Cadastrado com sucesso');</script>";
+        $admin = new Verificar();
+        $admin->verificarEmail($this->getNome(), $this->getEmail(), $this->getSenha(), $this->getLogin());
       }
-      $admin = new Verificar();
-      $admin->verificarEmail($this->getNome(), $this->getEmail(), $this->getSenha(), $this->getLogin());
+
+
     }
 
     public static function entrar($login, $senha){
@@ -62,11 +65,17 @@
       if($conn->connect_error){
         echo "Erro ao conectar ao banco";
       }
-      $stmt = $conn->prepare("SELECT * FROM admin WHERE login = ? and senha = ?");
-      $stmt->bind_param('ss', $login, $senha);
-      $stmt->execute();
-      $result = $stmt->get_result();
-      var_dump($result);
+        $stmt = $conn->prepare("SELECT * FROM admin WHERE login = ? and senha = ?");
+        $stmt->bind_param('ss', $login, $senha);
+        $stmt->execute();
+        $result = $stmt->get_result();
+          if($result->num_rows == 1){
+            $row = $result->fetch_assoc();
+            $_SESSION['nome'] = $row['nome'];
+            header("Location: index_admin.php");
+          }else{
+            header("Location: admin.php");
+          }
 
     }
 
