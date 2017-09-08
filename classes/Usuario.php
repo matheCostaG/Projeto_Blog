@@ -73,7 +73,7 @@ require_once "classes/config.php";
           }
     }
     public static function adicionarPostagem($titulo, $texto, $data, $id, $imagem){
-      $conn = new mysqli("localhost", "root", "170s6612", "blog");
+      $conn = new mysqli("localhost", "root", "", "blog");
       if($conn->connect_error){
         echo "Erro ao conectar ao banco";
       }

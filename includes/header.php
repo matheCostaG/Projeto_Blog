@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="imagens/s8.png">
     <link rel="stylesheet" type="text/css" href="includes/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="includes/css/estilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  	  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="includes/css/normalize.css">
     <script src="includes/js/jquery-3.2.1.js"></script>

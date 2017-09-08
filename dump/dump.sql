@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.19, for Linux (x86_64)
 --
--- Host: localhost    Database: blog
+-- Host: 127.0.0.1    Database: blog
 -- ------------------------------------------------------
 -- Server version	5.7.19-0ubuntu0.17.04.1
 
@@ -61,7 +61,7 @@ CREATE TABLE `publicacao` (
   PRIMARY KEY (`id`),
   KEY `id_admin` (`id_admin`),
   CONSTRAINT `publicacao_ibfk_1` FOREIGN KEY (`id_admin`) REFERENCES `admin` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,7 +70,7 @@ CREATE TABLE `publicacao` (
 
 LOCK TABLES `publicacao` WRITE;
 /*!40000 ALTER TABLE `publicacao` DISABLE KEYS */;
-INSERT INTO `publicacao` VALUES (17,'ESSENTIAL PHONE: CONHEÃ‡A O SMARTPHONE FUTURISTA','O Essential Phone (ou PH-1) Ã© o smartphone lanÃ§ado na Ãºltima quinta-feira (24) pela Essential, empresa do criador do sistema operacional Android, Andy Rubin.\r\n\r\nO Essential Phone promete bater de frente com os celulares de elite, como as novas versÃµes do iPhone e o Galaxy S8. O display Ã© parecido com o gadget da Samsung e ocupa quase todo o painel frontal. AlÃ©m disso, Ã© possÃ­vel acoplar uma cÃ¢mera 360Âº de forma modular ao smartphone.\r\n\r\nApesar de ainda nÃ£o sabermos nada muito concreto a respeito das funcionalidades e desempenho do aparelho, alguns sites americanos jÃ¡ receberam seus modelos para reviews. Mesmo assim, sabemos que sÃ³ o fato do software ser absolutamente limpo jÃ¡ agradou quem pegou o aparelho em mÃ£os. O Ãºnico ponto negativo da tela â€œinfinitaâ€ Ã© que a maioria dos aplicativos ainda nÃ£o estÃ£o atualizados para ocupar todo o espaÃ§o disponÃ­vel.','17.jpg',7,'2017-09-07'),(18,'Rumo ao Brasil? Galaxy Note 8 chegarÃ¡ Ã  Ãndia semana que vem, veja o preÃ§o','Mesmo quem nÃ£o tem planos de comprar um Galaxy Note 8 pode estar ansioso para a chegada do aparelho no Brasil, puramente pela curiosidade em saber quanto a Samsung cobrarÃ¡ pelo modelo. Na prÃ³xima semana, pelo menos os indianos serÃ£o capazes de sanar essa dÃºvida.','18.jpg',7,'2017-09-14'),(19,'Galaxy Note 8 x V30: briga acirrada entre as melhores cÃ¢meras duplas','Agosto de 2017 marcou o lanÃ§amento de uma dupla que estÃ¡ sendo considerada como a melhor do mercado: Galaxy Note 8, o novo titÃ£ da Samsung, e o V30, a forma de reparar pelos erros do LG G6. Talvez o que mais entre em destaque no par de telefones seja suas.\r\n\r\nAmbos possuem um sistema de cÃ¢meras duplas de respeito, mas serÃ¡ que uma coreana acertou mais do que a outra? Para tentar achar a resposta para essa questÃ£o, o canal de Danny Winget no YouTube colocou o Galaxy Note 8 e o V30 em uma disputa, lado a lado, assista abaixo:','19.jpg',9,'2017-09-07');
+INSERT INTO `publicacao` VALUES (17,'ESSENTIAL PHONE: CONHEÃ‡A O SMARTPHONE FUTURISTA','O Essential Phone (ou PH-1) Ã© o smartphone lanÃ§ado na Ãºltima quinta-feira (24) pela Essential, empresa do criador do sistema operacional Android, Andy Rubin.\r\n\r\nO Essential Phone promete bater de frente com os celulares de elite, como as novas versÃµes do iPhone e o Galaxy S8. O display Ã© parecido com o gadget da Samsung e ocupa quase todo o painel frontal. AlÃ©m disso, Ã© possÃ­vel acoplar uma cÃ¢mera 360Âº de forma modular ao smartphone.\r\n\r\nApesar de ainda nÃ£o sabermos nada muito concreto a respeito das funcionalidades e desempenho do aparelho, alguns sites americanos jÃ¡ receberam seus modelos para reviews. Mesmo assim, sabemos que sÃ³ o fato do software ser absolutamente limpo jÃ¡ agradou quem pegou o aparelho em mÃ£os. O Ãºnico ponto negativo da tela â€œinfinitaâ€ Ã© que a maioria dos aplicativos ainda nÃ£o estÃ£o atualizados para ocupar todo o espaÃ§o disponÃ­vel.','17.jpg',7,'2017-09-07'),(18,'Rumo ao Brasil? Galaxy Note 8 chegarÃ¡ Ã  Ãndia semana que vem, veja o preÃ§o','Mesmo quem nÃ£o tem planos de comprar um Galaxy Note 8 pode estar ansioso para a chegada do aparelho no Brasil, puramente pela curiosidade em saber quanto a Samsung cobrarÃ¡ pelo modelo. Na prÃ³xima semana, pelo menos os indianos serÃ£o capazes de sanar essa dÃºvida.','18.jpg',7,'2017-09-14'),(19,'Galaxy Note 8 x V30: briga acirrada entre as melhores cÃ¢meras duplas','Agosto de 2017 marcou o lanÃ§amento de uma dupla que estÃ¡ sendo considerada como a melhor do mercado: Galaxy Note 8, o novo titÃ£ da Samsung, e o V30, a forma de reparar pelos erros do LG G6. Talvez o que mais entre em destaque no par de telefones seja suas.\r\n\r\nAmbos possuem um sistema de cÃ¢meras duplas de respeito, mas serÃ¡ que uma coreana acertou mais do que a outra? Para tentar achar a resposta para essa questÃ£o, o canal de Danny Winget no YouTube colocou o Galaxy Note 8 e o V30 em uma disputa, lado a lado, assista abaixo:','19.jpg',9,'2017-09-07'),(20,'\r\nAndroidNotÃ­cias\r\nHomeâ€ºAndroidâ€ºMoto C: O Novo Celular de Baixo Custo da Motorola\r\nMoto C: O Novo Celular de Baixo Custo da Motorola','No inÃ­cio de abril, a Motorola comemorou a marca expressiva de 44 anos do lanÃ§amento de seu primeiro celular. Aproveitando que as atenÃ§Ãµes estavam todas voltadas para seu vÃ­deo comemorativo, a marca vazou a imagem da traseira de um novo modelo, batizado com o nome de Moto C, e tambÃ©m o novo Moto X 2017.','20.jpg',7,'2017-09-17'),(21,'Galaxy C8 Ã© o novo smartphone da Samsung com cÃ¢mera dupla para o mercado chinÃªs','No inÃ­cio do mÃªs vimos as primeiras imagens do Galaxy C8, novo intermediÃ¡rio da Samsung destinado ao mercado chinÃªs. De lÃ¡ para cÃ¡ nÃ£o tivemos mais nenhuma notÃ­cia do aparelho, mas eis que a sul-coreana acabou oficializando a novidade em seu site na China nesta quinta-feira (7).\r\n\r\nA novidade lembra bastante o Galaxy J7+ lanÃ§ado este mÃªs na Coreia do Sul, nÃ£o apenas pelo design quase idÃªntico, mas tambÃ©m pelas especificaÃ§Ãµes parecidas. Aqui temos um smartphone com corpo em metal, cÃ¢mera dupla e hardware da MediaTek â€“ descriÃ§Ã£o comum para um smartphone legitimamente chinÃªs.','21.jpg',7,'2017-09-07');
 /*!40000 ALTER TABLE `publicacao` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -83,4 +83,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-09-07 21:26:47
+-- Dump completed on 2017-09-08 14:56:52
