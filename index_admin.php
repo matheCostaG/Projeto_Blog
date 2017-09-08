@@ -15,12 +15,12 @@
 		</div>
 			<div class="col-md-9">
 				<div class="jumbotron" >
-					<form  method="post" enctype="multipart/form-data">
+					<form method="post" enctype="multipart/form-data">
 						<textarea class="border border-dark rounded col-md-12" rows="1" name="titulo" placeholder="Titulo da Postagem!"></textarea>
 						<textarea class="border border-dark rounded col-md-12" rows="5" name="texto" placeholder="Escreva sua Postagem Aqui!"></textarea>
 						<input type="file" name="imagem_postagem" class="btn btn-outline-primary">
 						<input type="date" type="tel" name="data" class="btn btn-link">
-						<button type="submit" class="btn btn-outline-success float-right">Postar</button>
+						<button type="submit" id="btn-postar" class="btn btn-outline-success float-right">Postar</button>
 					</form>
 				</div>
 			</div>
@@ -40,7 +40,9 @@
       }
   }
 ?>
+<div id="carregar_postagem">
 
+</div>
 
 <?php
 	require_once "includes/footer.php"

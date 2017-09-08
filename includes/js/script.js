@@ -8,6 +8,27 @@ $(document).ready(function(){
     });
   });
 
+$("#btn-buscar").click(function(){
+  if($("#buscar").val().length > 0){
+    $.ajax({
+      url: 'buscar.php',
+      type: 'POST',
+      data: $('#buscar_site').serialize(),
+      success: function(data){
+        $('#resultado').html(data);
+      }
+    });
+  }
+});
+
+
+
+
+
+
+
+
+
   function carregar(){
     $.ajax({
       url: 'carregar_postagem.php',
@@ -18,7 +39,6 @@ $(document).ready(function(){
     });
   }
 
+  carregar();
 
-
-carregar();
 });
