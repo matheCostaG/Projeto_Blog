@@ -20,7 +20,7 @@
 width: 60%;
 height: auto;
 overflow: hidden;
-margin: auto auto auto 25%;
+margin: 2% auto auto 25%;
 
 }
 
@@ -54,7 +54,7 @@ margin: auto auto auto 25%;
 .content h1{
   font-size: 20px;
   font-weight: bold;
-  color: red;
+  color: white;
   font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -81,7 +81,7 @@ margin: auto auto auto 25%;
 .footer_post a{
   font-family: tahoma, "Trebuchet Ms", arial;
   font-size: 13px;
-  color: #666;
+  color: white;
   line-height: 20px;
   font-weight: bold;
   text-decoration: none;
@@ -95,13 +95,13 @@ margin: auto auto auto 25%;
 .datapost{
   font-family: tahoma, "Trebuchet Ms", arial;
   font-size: 13px;
-  color: #999;
+  color: white;
   line-height: 20px;
   float: right;
 }
 
 .datapost strong{
-  color: #666;
+  color: white;
   font-weight: bold;
 }
 
@@ -116,7 +116,6 @@ margin: auto auto auto 25%;
   margin-bottom: 2em;
   width: auto;
   margin-bottom: 2em;
-
   overflow: hidden;
 }
 
@@ -139,7 +138,6 @@ margin: auto auto auto 25%;
   border: 1px solid #d6d6d6;
   -webkit-background-clip: padding-box;
   -webkit-background-clip: padding-box;
->>>>>>> 37a25e834e802631fc82adbc3c0594c3c6a19476
   border: 1px solid #d6d6d6;
   -webkit-background-clip: padding-box;
 
@@ -242,7 +240,6 @@ margin: auto auto auto 25%;
   	position:absolute;
     left:10px;
     top:5px;
-
   }
 
 .icone4 i{
