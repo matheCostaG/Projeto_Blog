@@ -23,10 +23,15 @@
   	        <a class="nav-link" href="sobre.php">Sobre</a>
   	      </li>
   	    </ul>
-  	    <form class="form-inline my-2 my-lg-0" id="form_buscar">
+  	    <form class="form-inline my-2 my-lg-0" id="form_buscar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="col-md-6">
   	      <input class="form-control mr-sm-2" name="buscar" type="text" id="buscar" placeholder="Procurar" aria-label="Procurar">
   	      <button class="btn btn-outline-info my-2 my-sm-0" type="submit" id="btn-buscar">Procurar</button>
+          <div class="dropdown">
+            <div class="dropdown-menu" aria-labelledby="buscar" id="resultado" style="font-size:12px;">
+            </div>
+          </div>
+          </div>
   	    </form>
   	  </div>
 	  </nav>
-<h1 id='resultado'>A:</h1>
