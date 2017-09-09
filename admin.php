@@ -1,5 +1,6 @@
 <?php
   require_once "classes/config.php";
+  require_once "includes/conexao.php";
 ?>
 <div class="formulario">
   <div class="container ">
@@ -30,8 +31,6 @@
     </div>
   </div>
 </div>
-
-
 <?php
 require_once "includes/footer.php";
 ?>

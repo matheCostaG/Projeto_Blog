@@ -9,5 +9,4 @@
     echo "Erro na conexão com o banco".$conn->connect_error;
   }
   mysqli_set_charset($conn, 'utf8');
-
  ?>

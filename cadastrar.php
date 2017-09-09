@@ -1,5 +1,5 @@
 <?php
-  require_once "classes/config.php";
+require_once "classes/config.php";
   if($_SERVER["REQUEST_METHOD"] == 'POST'){
      $nome = isset($_POST['nome']) ? $_POST['nome'] : null;
      $email = isset($_POST['email']) ? $_POST['email'] : null;

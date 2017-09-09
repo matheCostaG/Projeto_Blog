@@ -29,5 +29,3 @@
 	<button type="submit" class="btn btn-icone icone5 btn-outline-warning"><i class="material-icons">check_circle</i>Adicionar</button>
 
 </form>
-
-

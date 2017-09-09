@@ -9,6 +9,7 @@ $(document).ready(function(){
   });
 
 $("#buscar").keyup(function(){
+  var teste = "";
   if($("#buscar").val().length > 0){
     $.ajax({
         url: 'buscar.php',
