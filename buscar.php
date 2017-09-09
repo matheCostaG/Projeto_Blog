@@ -4,7 +4,9 @@
   if($buscar != null){
     $result = $conn->query("SELECT titulo FROM publicacao WHERE titulo LIKE '%$buscar%'");
     while($row = $result->fetch_assoc()){
-      echo $row['titulo'];
+      echo "<ul class='list-group'>";
+      echo "<a class='dropdown-item' href='#' style='width:500px'><li class='list-group-item'>".$row['titulo']."</li></a>";
+      echo "</ul>";
     }
   }
 
