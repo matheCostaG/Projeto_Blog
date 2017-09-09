@@ -13,6 +13,4 @@
   }else {
     header("Location: index.php");
   }
-  require_once "includes/footer.php";
-
  ?>

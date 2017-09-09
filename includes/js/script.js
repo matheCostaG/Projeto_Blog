@@ -8,26 +8,19 @@ $(document).ready(function(){
     });
   });
 
-$("#btn-buscar").click(function(){
+$("#buscar").keyup(function(){
+  var teste = "";
   if($("#buscar").val().length > 0){
     $.ajax({
-      url: 'buscar.php',
-      type: 'POST',
-      data: $('#buscar_site').serialize(),
-      success: function(data){
-        $('#resultado').html(data);
-      }
+        url: 'buscar.php',
+        method: 'post',
+        data: $('#form_buscar').serialize(),
+        success: function(data){
+          $("#resultado").html(data);
+        }
     });
   }
 });
-
-
-
-
-
-
-
-
 
   function carregar(){
     $.ajax({

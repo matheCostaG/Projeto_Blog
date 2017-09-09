@@ -1,5 +1,6 @@
 <?php
 	require_once "classes/config.php";
+	require_once "includes/conexao.php";
 	if($_SESSION['id'] == ""){
 		header("Location: index.php");
 	}
@@ -53,8 +54,44 @@
       }
   }
 ?>
-<div id="carregar_postagem">
+<div class="container">
+<div class=" margem widget widget-table action-table">
+	<div class="widget-header"> <i class="material-icons">list</i>
+	</div>
 
+<?php
+  $result = $conn->query("select * from admin as a join publicacao as p on a.id = p.id_admin order by p.id DESC");
+  while ($row = $result->fetch_assoc()){
+		echo "<div class='margem'>";
+		echo "<div class='widget-content'>";
+		echo "<table class='table table-striped table-bordered'>";
+		echo "<thead>";
+		echo "<tr>";
+		echo "<th> Título da Postagem </th>";
+		echo "<th> Data </th>";
+		echo "<th> Resumo</th>";
+		echo "<th> Imagem</th>";
+		echo "<th> Editar</th>";
+		echo "<th> Excluir</th>";
+		echo "</tr>";
+		echo "</thead>";
+		echo "<tbody>";
+		echo "<tr>";
+		echo "<td> ".$row['titulo']."</td>";
+		echo "<td> ".$row['data']."</td>";
+		echo "<td> ".$row['texto']."</td>";
+		echo "<td><img height='200px' width='100px' src='imagens/".$row['img_postagem']."'></td>";
+		echo "<td><a href='#' class='btn btn-small btn-success'><i class='material-icons'>edit</i></a></td>";
+		echo "<td><a href='#' class='btn btn-danger btn-small'><i class='material-icons'>delete</i></a></td>";
+		echo "</tr>   ";
+		echo "</tbody>";
+		echo "</table>";
+		echo "</div>";
+		echo "</div>";
+
+  }
+?>
+</div>
 </div>
 
 <?php

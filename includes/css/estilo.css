@@ -108,18 +108,35 @@ margin:0 auto;
 
 /*visulizar*/
 .widget {
-  
+
   position: relative;
   clear: both;
+<<<<<<< HEAD
   width: auto;
   margin-bottom: 2em; 
+=======
+
+  width: auto;
+
+  margin-bottom: 2em;
+
+>>>>>>> bb0a55b300b1a50d7a644fd2742bcff854f80596
   overflow: hidden;
 }
 
 .widget-header {
+<<<<<<< HEAD
   position: relative;
   height: 40px;
   line-height: 40px;
+=======
+
+  position: relative;
+
+  height: 40px;
+  line-height: 40px;
+
+>>>>>>> bb0a55b300b1a50d7a644fd2742bcff854f80596
   background: #f9f6f1;
   background:-moz-linear-gradient(top, #f9f6f1 0%, #f2efea 100%); /* FF3.6+ */
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f6f1), color-stop(100%,#f2efea)); /* Chrome,Safari4+ */
@@ -129,14 +146,32 @@ margin:0 auto;
   background:linear-gradient(top, #f9f6f1 0%,#f2efea 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea');
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea')";
+<<<<<<< HEAD
   border: 1px solid #d6d6d6;
   -webkit-background-clip: padding-box; 
+=======
+
+
+  border: 1px solid #d6d6d6;
+
+
+  -webkit-background-clip: padding-box;
+>>>>>>> bb0a55b300b1a50d7a644fd2742bcff854f80596
 }
-  
+
   .widget-content {
   padding: 20px 15px 15px;
+<<<<<<< HEAD
   background: #FFF; 
   border: 1px solid #D5D5D5;
+=======
+
+  background: #FFF;
+
+
+  border: 1px solid #D5D5D5;
+
+>>>>>>> bb0a55b300b1a50d7a644fd2742bcff854f80596
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -149,7 +184,7 @@ margin:0 auto;
 
 .widget-table .table {
   margin-bottom: 0;
-  
+
   border: none;
 }
 
@@ -182,12 +217,12 @@ margin:0 auto;
   	padding-left: 40px;
   }
 
-  
+
   .icone input[type=email]{
   	padding-left: 40px;
   }
 
-  
+
   .icone{
     position:relative;
   }
@@ -204,8 +239,8 @@ margin:0 auto;
   .icone5 {
     position:relative;
   }
-  
-  
+
+
   .icone i{
     position:absolute;
     left:0;
@@ -234,7 +269,7 @@ margin:0 auto;
   	position:absolute;
     top: 3px;
     right:10px;
-    
+
 
   }
 
@@ -243,5 +278,3 @@ margin:0 auto;
     left: 10px;
     top: 5px;
   }
-
-
