@@ -40,7 +40,14 @@ require_once "classes/config.php";
     }
 
     public function cadastrarAdmin(){
+<<<<<<< HEAD
+      $conn = new mysqli("localhost", "root", "", "blog");
+      if($conn->connect_error){
+        echo "Erro na conexão com o banco";
+      }
+=======
       require_once "includes/conexao.php";
+>>>>>>> bb0a55b300b1a50d7a644fd2742bcff854f80596
       $senha = $this->getSenha();
       $senhaAdm = md5($senha);
       $stmt = $conn->prepare("INSERT INTO admin(nome, senha, login, email) VALUES(?,?,?,?)");
@@ -53,7 +60,14 @@ require_once "classes/config.php";
     }
 
     public static function entrar($login, $senha){
+<<<<<<< HEAD
+      $conn = new mysqli("localhost", "root", "", "blog");
+      if($conn->connect_error){
+        echo "Erro ao conectar ao banco";
+      }
+=======
         require_once "includes/conexao.php";
+>>>>>>> bb0a55b300b1a50d7a644fd2742bcff854f80596
         $stmt = $conn->prepare("SELECT * FROM admin WHERE login = ? and senha = ?");
         $stmt->bind_param('ss', $login, $senha);
         $stmt->execute();

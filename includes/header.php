@@ -11,7 +11,15 @@
     <script src="includes/js/jquery-3.2.1.js"></script>
     <script src="includes/js/script.js"></script>
   </head>
-  <body>
+
+  <style>
+    
+    
+  </style>
+
+  
+
+  <body class='img-fundo' style='background-image: url(imagens/tecno.jpg);'>
   	<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
   	  <a class="navbar-brand" href="index.php">MyMobile</a>
   	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
