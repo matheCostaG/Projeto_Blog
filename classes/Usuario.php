@@ -40,7 +40,7 @@ require_once "classes/config.php";
     }
 
     public function cadastrarAdmin(){
-      $conn = new mysqli("localhost", "root", "", "blog");
+      $conn = new mysqli("localhost", "root", "170s6612", "blog");
       if($conn->connect_error){
         echo "Erro na conexão com o banco";
       }
@@ -56,7 +56,7 @@ require_once "classes/config.php";
     }
 
     public static function entrar($login, $senha){
-      $conn = new mysqli("localhost", "root", "", "blog");
+      $conn = new mysqli("localhost", "root", "170s6612", "blog");
       if($conn->connect_error){
         echo "Erro ao conectar ao banco";
       }

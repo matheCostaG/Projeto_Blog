@@ -18,16 +18,16 @@
 				<div class="jumbotron" >
 					<form  method="post" enctype="multipart/form-data">
 
-						<input type="text" name="titulo" class="border border-dark rounded col-md-12" id="" 
+						<input type="text" name="titulo" class="border border-dark rounded col-md-12" id=""
 							placeholder="Titulo da Postagem !"> </br></br>
 
 							<textarea class="ckeditor" name="texto"></textarea> </br>
 
 								<input type="file" name="imagem_postagem" class="btn btn-outline-primary ">
-									
 
-										<input class=" btn-link " type="date" type="tel" name="data"> 
-											
+
+										<input class=" btn-link " type="date" type="tel" name="data">
+
 
 											<button type="submit" class="btn btn-outline-success btn-icone2 icone4 float-right"><i class="material-icons">check</i>Postar</button>
 					</form>
@@ -50,7 +50,9 @@
       }
   }
 ?>
+<div id="carregar_postagem">
 
+</div>
 
 <?php
 	require_once "includes/footer.php"
