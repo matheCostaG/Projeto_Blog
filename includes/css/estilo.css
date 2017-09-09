@@ -6,21 +6,18 @@
 	margin-top: 50px;
 
 }
-<<<<<<< HEAD
-=======
-
 /*index*/
 
 .img-fundo{
-  background-size: cover; 
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  
+
 }
 
 .divcenter{
-width: 800px; 
+width: 800px;
 height: auto;
 overflow: hidden;
 margin:0 auto;
@@ -109,21 +106,17 @@ margin:0 auto;
 
 
 /*visulizar*/
->>>>>>> 53218d77e0a804eef9701e9d7583c2cd5298cd71
 .widget {
 
   position: relative;
   clear: both;
 <<<<<<< HEAD
   width: auto;
-  margin-bottom: 2em; 
-=======
-
+  margin-bottom: 2em;
   width: auto;
 
   margin-bottom: 2em;
 
->>>>>>> bb0a55b300b1a50d7a644fd2742bcff854f80596
   overflow: hidden;
 }
 
@@ -132,14 +125,9 @@ margin:0 auto;
   position: relative;
   height: 40px;
   line-height: 40px;
-=======
-
   position: relative;
-
   height: 40px;
   line-height: 40px;
-
->>>>>>> bb0a55b300b1a50d7a644fd2742bcff854f80596
   background: #f9f6f1;
   background:-moz-linear-gradient(top, #f9f6f1 0%, #f2efea 100%); /* FF3.6+ */
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f6f1), color-stop(100%,#f2efea)); /* Chrome,Safari4+ */
@@ -149,32 +137,19 @@ margin:0 auto;
   background:linear-gradient(top, #f9f6f1 0%,#f2efea 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea');
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea')";
-<<<<<<< HEAD
   border: 1px solid #d6d6d6;
-  -webkit-background-clip: padding-box; 
-=======
-
-
-  border: 1px solid #d6d6d6;
-
-
   -webkit-background-clip: padding-box;
->>>>>>> bb0a55b300b1a50d7a644fd2742bcff854f80596
+  border: 1px solid #d6d6d6;
+  -webkit-background-clip: padding-box;
+
 }
 
   .widget-content {
   padding: 20px 15px 15px;
-<<<<<<< HEAD
-  background: #FFF; 
-  border: 1px solid #D5D5D5;
-=======
-
   background: #FFF;
-
-
   border: 1px solid #D5D5D5;
-
->>>>>>> bb0a55b300b1a50d7a644fd2742bcff854f80596
+  background: #FFF;
+  border: 1px solid #D5D5D5;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
