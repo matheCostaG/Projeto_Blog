@@ -8,6 +8,19 @@
 }
 /*index*/
 
+.fundo-pagina{
+  background-color: rgba(255, 255, 255, 0.54);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.fundo-titulo{
+  background-color: rgba(255, 255, 255, 0.40);
+  padding: 2%;
+  
+}
+
 .img-fundo{
   background-size: cover;
   background-attachment: fixed;
@@ -26,7 +39,7 @@ margin: 2% auto auto 25%;
 
 .boxposts {
   width: 85%;
-  height: auto;
+  height: 300px;
   padding: 20px;
   background: #fff;
   border: 1px solid #eee;
@@ -52,9 +65,9 @@ margin: 2% auto auto 25%;
 
 
 .content h1{
-  font-size: 20px;
+  font-size: 100%;
   font-weight: bold;
-  color: white;
+  color: black;
   font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -73,19 +86,17 @@ margin: 2% auto auto 25%;
   height:auto;
   overflow: hidden;
   padding-top: 8px;
-  margin-top: 8px;
+  margin-top: 15%;
   border-top: 1px dotted #eee;
 
 }
 
 .footer_post a{
-  font-family: tahoma, "Trebuchet Ms", arial;
-  font-size: 13px;
   color: white;
   line-height: 20px;
   font-weight: bold;
   text-decoration: none;
-  float: left;
+  
 }
 
 .footer_post a:hover{
@@ -93,16 +104,14 @@ margin: 2% auto auto 25%;
 }
 
 .datapost{
-  font-family: tahoma, "Trebuchet Ms", arial;
-  font-size: 13px;
-  color: white;
-  line-height: 20px;
-  float: right;
+  color: black;
+  font-weight: bold;
+  margin-left: 40%; 
 }
 
 .datapost strong{
-  color: white;
-  font-weight: bold;
+  color: red;
+
 }
 
 
