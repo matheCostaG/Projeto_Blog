@@ -12,6 +12,9 @@
 			</br><button class="btn btn-outline-primary btn-icone icone2 " id="btn-admin">
 				<i class="material-icons">person_add</i>Adicionar Admin</button>
 			</div></br>
+		<a href="visualizar.php"><button class="btn btn-outline-warning btn-icone icone3">
+			<i class="material-icons">visibility</i>Visualizar Posts</button></a></br></br>
+
 		<a href="sair.php"><button class="btn btn-outline-danger btn-icone icone3"><i class="material-icons">cancel</i>Sair</button></a>
 		</div>
 			<div class="col-md-9">

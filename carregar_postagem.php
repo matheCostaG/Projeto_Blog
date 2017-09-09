@@ -1,6 +1,6 @@
 <?php
 
-	$conn = new mysqli("localhost", "root", "170s6612", "blog");
+	$conn = new mysqli("localhost", "root", "", "blog");
   $result = $conn->query("select * from admin as a join publicacao as p on a.id = p.id_admin order by p.id DESC");
 
   while ($row = $result->fetch_assoc()){
