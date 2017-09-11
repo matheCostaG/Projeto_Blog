@@ -13,6 +13,7 @@ $(document).ready(function(){
 // Abre a busca
 $("#buscar").keyup(function(){
   if($("#buscar").val().length > 0){
+    $("#resultado").css({"display": "block"});
     $.ajax({
         url: 'buscar.php',
         method: 'post',
@@ -22,11 +23,11 @@ $("#buscar").keyup(function(){
         }
     });
   }
+  if($("#buscar").val().length == 0){
+    $("#resultado").css({"display": "none"});
+  }
 });
 // Fecha a busca
-
-
-
 
 // Abre a função carrega postagem
 function carregar_postagem(){
@@ -51,11 +52,4 @@ function carregar_postagem(){
 }
 carregar_postagem();
 // Fecha a função carrega postagem
-
-
-
-
-
-
-
 });

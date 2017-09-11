@@ -7,6 +7,7 @@
     if($login != null && $senha != null){
       $senhaAdm = md5($senha);
       Usuario::entrar($login, $senhaAdm);
+      header("Location: index_admin.php");
     }else{
       header("Location: admin.php");
     }

@@ -1,11 +1,16 @@
 <?php
-	require_once "classes/config.php";
+	require_once "includes/header.php";
 	require_once "includes/conexao.php";
 
   ?>
  
   <?php
+<<<<<<< HEAD
   $result = $conn->query("select * from admin as a join publicacao as p on a.id = p.id_admin order by p.id DESC");
+=======
+
+  $result = $conn->query("select * from admin as a join publicacao as p on a.id = p.id_admin order by p.data DESC");
+>>>>>>> 8a4c5fd3eab42949dc52e7e5ce78407bcdbcc3fe
   while ($row = $result->fetch_assoc()){
 
     echo "<div class='divcenter'>";
@@ -26,6 +31,12 @@
     echo "</ul>";
     echo "</div>";
 }
+<<<<<<< HEAD
+=======
+
+$conn->close();
+
+>>>>>>> 8a4c5fd3eab42949dc52e7e5ce78407bcdbcc3fe
 	?>
 
 	<?php

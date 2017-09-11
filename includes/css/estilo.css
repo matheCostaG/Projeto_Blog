@@ -263,6 +263,7 @@ margin: 2% auto auto 25%;
     left: 10px;
     top: 5px;
   }
+<<<<<<< HEAD
 
   /*rodape*/
   .rodape{
@@ -271,3 +272,21 @@ margin: 2% auto auto 25%;
     color: white;
     clear: both;
       }
+=======
+.fonte1sobre{
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  color: white;
+}
+.fonte2sobre{
+  font-size: 60px;
+  font-family: 'Anton', sans-serif;
+  color: white;
+}
+.fonte3sobre{
+  font-size: 20px;
+  font-family: 'Anton', sans-serif;
+  color: white;
+  text-align: center;
+}
+>>>>>>> 8a4c5fd3eab42949dc52e7e5ce78407bcdbcc3fe

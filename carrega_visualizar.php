@@ -24,7 +24,7 @@ if($_SESSION['id'] == ""){
    echo "<td> ".$row['data']."</td>";
    echo "<td> ".$row['texto']."</td>";
    echo "<td><img class='img-thumbnail' src='imagens/".$row['img_postagem']."'></td>";
-   echo "<td><a href='#' class='btn btn-small btn-success'><i class='material-icons'>edit</i></a></td>";
+   echo "<td><a href='form_editar.php?id=".$row['id']."' class='btn btn-small btn-success'><i class='material-icons'>edit</i></a></td>";
    echo "<td><button value=".$row['id']." class='btn btn-danger btn-small btn-excluir'><i class='material-icons'>delete</i></button></td>";
    echo "</tr>   ";
    echo "</tbody>";
