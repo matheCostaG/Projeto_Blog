@@ -3,10 +3,10 @@
 	require_once "includes/conexao.php";
 
   ?>
-  <div class='fundo-pagina'>
-  <?php
 
-  $result = $conn->query("select * from admin as a join publicacao as p on a.id = p.id_admin order by p.data DESC LIMIT 6");
+  <?php
+  $result = $conn->query("select * from admin as a join publicacao as p on a.id = p.id_admin order by p.data DESC");
+
   while ($row = $result->fetch_assoc()){
 
     echo "<div class='divcenter'>";
@@ -14,7 +14,7 @@
     echo "<li class='list-group-item' >";
     echo "<span class='content'>";
     echo "<div class='fundo-titulo'>";
-    echo "<a href='#'><h1>".$row['titulo']."</h1></a>";
+    echo "<a href='postagem.php'><h1>".$row['titulo']."</h1></a>";
     echo "</div>";
     echo "<div class='footer_post'>";
     echo "<div class='fundo-titulo'>";
@@ -27,9 +27,11 @@
     echo "</ul>";
     echo "</div>";
 }
+
 $conn->close();
+
 	?>
-   </div>
+
 	<?php
 	require_once "includes/footer.php";
  ?>

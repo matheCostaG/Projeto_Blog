@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="includes/css/estilo.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="includes/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Oswald" rel="stylesheet">
     <script src="includes/js/jquery-3.2.1.js"></script>
     <script src="includes/js/script.js"></script>
   </head>
@@ -32,3 +33,4 @@
   	    </form>
   	  </div>
 	  </nav>
+<div class='fundo-pagina'>
