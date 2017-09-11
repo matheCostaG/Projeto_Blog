@@ -33,6 +33,6 @@ drop table publicacao;
 delete from admin;
 
 INSERT INTO admin (nome, login, email, senha) values 
-('Cristtiano', 'Cristtiano', 'cristtiano.witor@gmail.com', '123'),
+('','','@gmail.com','123'),
 ('','','@gmail.com','123'),
 ('','','@gmail.com','123');
