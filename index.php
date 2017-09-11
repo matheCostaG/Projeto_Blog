@@ -6,7 +6,7 @@
   <div class='fundo-pagina'>
   <?php
 
-  $result = $conn->query("select * from admin as a join publicacao as p on a.id = p.id_admin order by p.data DESC");
+  $result = $conn->query("select * from admin as a join publicacao as p on a.id = p.id_admin order by p.data DESC LIMIT 6");
   while ($row = $result->fetch_assoc()){
 
     echo "<div class='divcenter'>";
