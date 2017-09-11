@@ -3,10 +3,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="includes/bootstrap/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     </div>
+    <footer class="footer">
+           <h3 align="center">Todos direitos Reservados<i class="material-icons">copyright</i></h3>
+          </footer>
   </body>
 
 
 </html>
-		<div class="rodape">
-           <h3 align="center">Todos direitos Reservados<i class="material-icons">copyright</i></h3>
-          </div>
+		
