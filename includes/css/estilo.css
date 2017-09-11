@@ -10,6 +10,9 @@
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  width: 70%;
+  margin: 2% auto auto auto;
+  
 }
 
 .fundo-titulo{
@@ -21,7 +24,6 @@
 .img-fundo{
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
 
 }
@@ -261,3 +263,11 @@ margin: 2% auto auto 25%;
     left: 10px;
     top: 5px;
   }
+
+  /*rodape*/
+  .rodape{
+      
+    background-color: black;
+    color: white;
+    clear: both;
+      }

@@ -8,7 +8,7 @@
 	<div class="row">
 		<div class="col-md-3">
 			<div id="div_admin">
-			</br><button class="btn btn-outline-primary btn-icone icone2 " id="btn-admin">
+			</br><button class="btn btn-outline-dark btn-icone icone2 " id="btn-admin">
 				<i class="material-icons">person_add</i>Adicionar Admin</button>
 			</div></br>
 		<a href="visualizar.php"><button class="btn btn-outline-warning btn-icone icone3">

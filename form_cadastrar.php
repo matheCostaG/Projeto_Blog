@@ -26,6 +26,6 @@
 						<input type="password" name="senha" class="form-control" id="" placeholder="Senha">
 							<i class="material-icons">lock_outline</i>
 				</div>
-	<button type="submit" class="btn btn-icone icone5 btn-outline-warning"><i class="material-icons">check_circle</i>Adicionar</button>
+	<button type="submit" class="btn btn-icone icone5 btn-light"><i class="material-icons">check_circle</i>Adicionar</button>
 
 </form>
