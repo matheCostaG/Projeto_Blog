@@ -27,7 +27,9 @@
     echo "</ul>";
     echo "</div>";
 }
+
 $conn->close();
+
 	?>
    </div>
 	<?php
