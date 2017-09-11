@@ -1,12 +1,12 @@
 <?php
-	require_once "classes/config.php";
+	require_once "includes/header.php";
 	require_once "includes/conexao.php";
 
   ?>
   <div class='fundo-pagina'>
   <?php
 
-  $result = $conn->query("select * from admin as a join publicacao as p on a.id = p.id_admin order by p.id DESC");
+  $result = $conn->query("select * from admin as a join publicacao as p on a.id = p.id_admin order by p.data DESC");
   while ($row = $result->fetch_assoc()){
 
     echo "<div class='divcenter'>";
@@ -27,7 +27,7 @@
     echo "</ul>";
     echo "</div>";
 }
-
+$conn->close();
 	?>
    </div>
 	<?php

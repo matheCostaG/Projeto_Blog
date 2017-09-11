@@ -1,10 +1,11 @@
 <?php
+	require_once "includes/config.php";
 	require_once "classes/config.php";
 	if($_SESSION['id'] == ""){
-		header("Location: index.php");
+		header("Location: index.php?");
 	}
 ?>
-<div class="container">
+</br><div class="container">
 	<div class="row">
 		<div class="col-md-3">
 			<div id="div_admin">
@@ -43,8 +44,7 @@
         header("Location: index_admin.php");
       }
   }
-?>
-<?php
+
 	require_once "includes/footer.php"
 ?>
 

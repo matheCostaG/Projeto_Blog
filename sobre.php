@@ -1,5 +1,5 @@
 <?php
-	require_once "classes/config.php";
+	require_once "includes/header.php";
 ?>
 	<div class="container text-center">
 		<div class="row">

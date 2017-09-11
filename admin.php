@@ -1,6 +1,5 @@
 <?php
-  require_once "classes/config.php";
-  require_once "includes/conexao.php";
+  require_once "includes/header.php";
 ?>
 <div class="formulario">
   <div class="container ">
@@ -11,8 +10,6 @@
         <div class="col-md-3">
         </div>
       <div class="col-md-6 ">
-        <div class="c_formulario">
-          <div id="conteudoForm">
             <form id="formulario" method="post" action="entrar.php">
               <div class="form-group icone ">
                 <label for="email" >Login:</label>
@@ -26,8 +23,6 @@
               </div>
               <button type="submit" class="btn btn-outline-info">Entrar</button>
             </form>
-          </div>
-      </div>
     </div>
   </div>
 </div>
