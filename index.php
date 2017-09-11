@@ -8,7 +8,7 @@
 
   $result = $conn->query("select * from admin as a join publicacao as p on a.id = p.id_admin order by p.id DESC");
   while ($row = $result->fetch_assoc()){
-   
+
     echo "<div class='divcenter'>";
     echo "<ul class='boxposts'  style=' background-size: 100%  auto; background-image: url(imagens/".$row['img_postagem']." );>";
     echo "<li class='list-group-item' >";

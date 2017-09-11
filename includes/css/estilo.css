@@ -1,13 +1,10 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 </style>
-
-.margem{
-	margin-top: 50px;
-
-}
 /*index*/
-
+.margem{
+  margin-top: 40px;
+}
 .fundo-pagina{
   background-color: rgba(255, 255, 255, 0.54);
   -webkit-border-radius: 10px;
@@ -18,7 +15,7 @@
 .fundo-titulo{
   background-color: rgba(255, 255, 255, 0.40);
   padding: 2%;
-  
+
 }
 
 .img-fundo{
@@ -30,7 +27,7 @@
 }
 
 .divcenter{
-width: 60%; 
+width: 60%;
 height: auto;
 overflow: hidden;
 margin: 2% auto auto 25%;
@@ -96,7 +93,7 @@ margin: 2% auto auto 25%;
   line-height: 20px;
   font-weight: bold;
   text-decoration: none;
-  
+
 }
 
 .footer_post a:hover{
@@ -106,7 +103,7 @@ margin: 2% auto auto 25%;
 .datapost{
   color: black;
   font-weight: bold;
-  margin-left: 40%; 
+  margin-left: 40%;
 }
 
 .datapost strong{
@@ -121,7 +118,7 @@ margin: 2% auto auto 25%;
   position: relative;
   clear: both;
   width: auto;
-  margin-bottom: 2em; 
+  margin-bottom: 2em;
   margin-bottom: 2em;
   width: auto;
   margin-bottom: 2em;
@@ -145,7 +142,7 @@ margin: 2% auto auto 25%;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea');
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea')";
   border: 1px solid #d6d6d6;
-  -webkit-background-clip: padding-box; 
+  -webkit-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   border: 1px solid #d6d6d6;
   -webkit-background-clip: padding-box;
@@ -154,7 +151,7 @@ margin: 2% auto auto 25%;
 
   .widget-content {
   padding: 20px 15px 15px;
-  background: #FFF; 
+  background: #FFF;
   background: #FFF;
   border: 1px solid #D5D5D5;
   background: #FFF;
@@ -249,7 +246,6 @@ margin: 2% auto auto 25%;
   	position:absolute;
     left:10px;
     top:5px;
-
   }
 
 .icone4 i{

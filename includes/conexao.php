@@ -1,7 +1,7 @@
 <?php
   define("HOST", "localhost");
   define("USUARIO", "root");
-  define("SENHA", "");
+  define("SENHA", "170s6612");
   define("BANCO","blog");
 
   $conn = new mysqli(HOST, USUARIO, SENHA, BANCO);

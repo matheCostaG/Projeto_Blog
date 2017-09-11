@@ -1,7 +1,6 @@
 <?php
 	require_once "classes/config.php";
 ?>
-<div class="margem">
 	<div class="container text-center">
 		<div class="row">
 		  <div class="col-sm-12">
@@ -12,7 +11,6 @@
 		  </div>
 		</div>
 	</div>
-</div>
 
 <?php
 	require_once "includes/footer.php";
