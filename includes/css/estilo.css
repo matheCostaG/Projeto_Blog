@@ -51,22 +51,25 @@ margin: 2% 10% 15% 17.5%;
   border-radius: 5px;
   margin-right: 24px;
 }
-
+/*.abrev_texto{
+  max-height: 80px;
+  overflow: hidden;
+}*/
 .content h1{
-  font-size: 125%;
+  font-size: 100%;
   font-weight: bold;
   color: black;
   font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
   margin-bottom: 20px;
-
 }
 
-.content p{
+.content .abrev_texto{
   font-family: tahoma, "Trebuchet Ms", arial;
-  font-size: 13px;
-  color: #999;
+  font-size: 100%;
+  color: #000;
   line-height: 20px;
+
 }
 
 /*.footer_post{
@@ -92,20 +95,14 @@ margin: 2% 10% 15% 17.5%;
 }
 */
 .datapost{
-  color: black;
-  font-weight: bold;
-  margin-left: 40%;
-}
-
-.datapost strong{
-  color: red;
+  color: #6b6b6b;
+  font-size: 89%;
 
 }
 
 
 /*visulizar*/
 .widget {
-
   position: relative;
   clear: both;
   width: auto;
