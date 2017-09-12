@@ -253,19 +253,19 @@ margin: 2% 10% 15% 17.5%;
   .fonte1sobre{
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
-  color: white;
+  color: #0c0c0c;
 }
 
 .fonte2sobre{
   font-size: 60px;
   font-family: 'Anton', sans-serif;
-  color: white;
+  color: #232323;
 }
 
 .fonte3sobre{
   font-size: 20px;
   font-family: 'Anton', sans-serif;
-  color: white;
+  color: black;
   text-align: center;
 }
 

@@ -1,8 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `blog` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `blog`;
+CREATE DATABASE  IF NOT EXISTS `blog6612` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `blog6612`;
 -- MySQL dump 10.13  Distrib 5.5.57, for debian-linux-gnu (x86_64)
 --
--- Host: 127.0.0.1    Database: blog
+-- Host: 127.0.0.1    Database: blog6612
 -- ------------------------------------------------------
 -- Server version	5.5.57-0ubuntu0.14.04.1
 

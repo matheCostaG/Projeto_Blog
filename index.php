@@ -16,8 +16,11 @@
 		echo "<span class='datapost'>".$row['data']."</span>";
     echo "<a class='text-center ' href='postagem.php'><h1>".$row['titulo']."</h1></a>";
     echo "<div class='abrev_texto text-center texto_valor'>".$row['MID(texto,1,250)']."...</div>";
+		echo "";
+		echo "<button class='btn btn-link'>Ler mais...</button><br>";
 		echo "<span class='datapost'>".$row['nome']."</span>";
     echo "</div>";
+
     echo "</span>";
     echo "</li>";
     echo "</ul>";

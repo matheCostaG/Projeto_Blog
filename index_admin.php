@@ -2,7 +2,7 @@
 	require_once "includes/config.php";
 	require_once "classes/config.php";
 	if($_SESSION['id'] == ""){
-		header("Location: index.php?");
+		header("Location: index.php");
 	}
 ?>
 </br><div class="container">
