@@ -8,17 +8,14 @@
 
 
 .fundo-titulo{
+  width: 100%;
+  top: 50%;
+  margin-top: 8%;
   background-color: rgba(255, 255, 255, 0.40);
   padding: 2%;
 
 }
 
-.img-fundo{
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-
-}
 
 .divcenter{
 width: 60%;
@@ -56,7 +53,7 @@ margin: 2% auto auto 25%;
 
 
 .content h1{
-  font-size: 100%;
+  font-size: 20px;
   font-weight: bold;
   color: black;
   font-family: 'Roboto Slab', serif;
