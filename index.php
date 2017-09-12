@@ -1,12 +1,14 @@
 <?php
 	require_once "includes/header.php";
 	require_once "includes/conexao.php";
+	$itens_por_pagina = 6;
+	$pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 0;
+  $result = $conn->query("select p.id, titulo, img_postagem, data, nome, MID(texto,1,250) from admin as a join publicacao as p on a.id = p.id_admin order by p.data DESC LIMIT $pagina, $itens_por_pagina ");
+	$num_total = $conn->query("SELECT id FROM publicacao")->num_rows;
+	$num_paginas = ceil($num_total/$itens_por_pagina);
 
-
-  $result = $conn->query("select p.id, titulo, img_postagem, data, nome, MID(texto,1,250) from admin as a join publicacao as p on a.id = p.id_admin order by p.data DESC");
-	$i = 0;
-	while ($row = $result->fetch_assoc()){
-    echo "<div class='divcenter '>";
+		while ($row = $result->fetch_assoc()){
+    echo "<div class='divcenter'>";
     echo "<ul class='boxposts'  style=' background-size: 100%  auto; background-image: url(imagens/".$row['img_postagem']." );>";
     echo "<li class='list-group-item' >";
     echo "<span class='teste content'>";
@@ -22,7 +24,20 @@
     echo "</div>";
 
 }
-$conn->close();
 
+$conn->close();
+?>
+<div class="container">
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+		<?php
+		for ($i=0; $i < $num_paginas; $i++) { ?>
+			<li class='page-item'><a class='page-link' href='index.php?pagina=<?php echo $i; ?>'><?php echo $i+1;?></a></li>
+
+		 <?php } ?>
+  </ul>
+</nav>
+</div>
+<?php
 	require_once "includes/footer.php";
  ?>
