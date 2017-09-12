@@ -33,6 +33,4 @@ drop table publicacao;
 delete from admin;
 
 INSERT INTO admin (nome, login, email, senha) values 
-('','','@gmail.com','123'),
-('','','@gmail.com','123'),
 ('','','@gmail.com','123');
