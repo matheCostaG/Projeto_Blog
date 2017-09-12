@@ -29,8 +29,11 @@ select * from publicacao;
 
 drop table admin;
 drop table publicacao;
-
+drop database blog;
 delete from admin;
 
-INSERT INTO admin (nome, login, email, senha) values 
-('','','@gmail.com','123');
+INSERT INTO admin (id, nome, login, email, senha) values 
+(17,'matheus Costa','Matheus','matheuscosta12535@gmail.com','d37eb50d868361ea729bb4147eb3c1d8'),
+(18,'Cristtiano Witor','Cristtiano','cristtiano.witor@gmail.com','202cb962ac59075b964b07152d234b70'),
+(19,'Mayquel','mayquel','mayquelphilipe@gmail.com','269efc0384256ed26a4f1bc2c6d72758'),
+(20,'Vitor Lepesqueur','vitorlepesqu','vitorlepesqueur@gmail.com','ab3b3e6556b4a9e7033cf87bf338862b');
