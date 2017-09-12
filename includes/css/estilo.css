@@ -2,23 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 </style>
 /*index*/
+
 .margem{
   margin-top: 40px;
 }
-.fundo-pagina{
-  background-color: rgba(255, 255, 255, 0.54);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  width: 70%;
-  margin: 2% auto auto auto;
-
-}
 
 .fundo-titulo{
-  background-color: rgba(255, 255, 255, 0.40);
+  width: 58%;
+  position: absolute;
+  margin-top: 15%;
+  background-color: rgba(255, 255, 255, 1);
   padding: 2%;
-
+  left: 20.4%;
 }
 
 .img-fundo{
@@ -29,22 +24,18 @@
 }
 
 .divcenter{
-width: 60%;
+width: 80%;
 height: auto;
 overflow: hidden;
-margin: 2% auto auto 25%;
+margin: 2% 10% 15% 17.5%;
 
 }
 
 .boxposts {
-  width: 85%;
+
+  width: 80%;
   height: 300px;
-  padding: 20px;
   background: #fff;
-  border: 1px solid #eee;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
   overflow: hidden;
   background-repeat: no-repeat;
 
@@ -61,10 +52,8 @@ margin: 2% auto auto 25%;
   margin-right: 24px;
 }
 
-
-
 .content h1{
-  font-size: 100%;
+  font-size: 125%;
   font-weight: bold;
   color: black;
   font-family: 'Roboto Slab', serif;
@@ -80,7 +69,7 @@ margin: 2% auto auto 25%;
   line-height: 20px;
 }
 
-.footer_post{
+/*.footer_post{
   width: 100%;
   height:auto;
   overflow: hidden;
@@ -101,7 +90,7 @@ margin: 2% auto auto 25%;
 .footer_post a:hover{
   text-decoration: underline;
 }
-
+*/
 .datapost{
   color: black;
   font-weight: bold;
@@ -263,25 +252,32 @@ margin: 2% auto auto 25%;
     left: 10px;
     top: 5px;
   }
-  .rodape{
 
-    background-color: black;
-    color: white;
-    clear: both;
-      }
-.fonte1sobre{
+  .fonte1sobre{
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
   color: white;
 }
+
 .fonte2sobre{
   font-size: 60px;
   font-family: 'Anton', sans-serif;
   color: white;
 }
+
 .fonte3sobre{
   font-size: 20px;
   font-family: 'Anton', sans-serif;
   color: white;
   text-align: center;
+}
+
+.rodape{
+  background-color: #87CEEB;
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+
 }

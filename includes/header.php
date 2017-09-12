@@ -29,8 +29,7 @@
           <div style="position:absolute; margin-top:150px;">
             <ul class="list-group" id="resultado"></ul>
           </div>
-          </div>
+          
   	    </form>
   	  </div>
 	  </nav>
-<div class='fundo-pagina'>
