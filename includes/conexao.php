@@ -1,8 +1,8 @@
 <?php
-  define("HOST", "localhost");
-  define("USUARIO", "root");
+  define("HOST", "mysql552.umbler.com");
+  define("USUARIO", "blogmymobile");
   define("SENHA", "170s6612");
-  define("BANCO","blog");
+  define("BANCO","blogmymobile");
 
   $conn = new mysqli(HOST, USUARIO, SENHA, BANCO);
   if($conn->connect_error){
