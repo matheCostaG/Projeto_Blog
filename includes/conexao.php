@@ -2,7 +2,7 @@
   define("HOST", "mysql552.umbler.com");
   define("USUARIO", "blogmymobile");
   define("SENHA", "170s6612");
-  define("BANCO","blogmymobile");
+  define("BANCO","blog6612");
 
   $conn = new mysqli(HOST, USUARIO, SENHA, BANCO);
   if($conn->connect_error){
