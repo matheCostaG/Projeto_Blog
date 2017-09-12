@@ -1,39 +1,47 @@
 <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab');
 </style>
+
+.nav-image{
+  width:320px; 
+  height:205px;
+}
+
 /*index*/
+
 .margem{
   margin-top: 40px;
 }
 
-
 .fundo-titulo{
-  width: 100%;
-  top: 50%;
-  margin-top: 8%;
-  background-color: rgba(255, 255, 255, 0.40);
+  width: 58%;
+  position: absolute;
+  margin-top: 15%;
+  background-color: rgba(255, 255, 255, 1);
   padding: 2%;
+  left: 20.4%;
+}
+
+.img-fundo{
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 
 }
 
-
 .divcenter{
-width: 60%;
+width: 80%;
 height: auto;
 overflow: hidden;
-margin: 2% auto auto 25%;
+margin: 2% 10% 15% 17.5%;
 
 }
 
 .boxposts {
-  width: 85%;
+
+  width: 80%;
   height: 300px;
-  padding: 20px;
   background: #fff;
-  border: 1px solid #eee;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
   overflow: hidden;
   background-repeat: no-repeat;
 
@@ -50,10 +58,8 @@ margin: 2% auto auto 25%;
   margin-right: 24px;
 }
 
-
-
 .content h1{
-  font-size: 20px;
+  font-size: 125%;
   font-weight: bold;
   color: black;
   font-family: 'Roboto Slab', serif;
@@ -69,27 +75,6 @@ margin: 2% auto auto 25%;
   line-height: 20px;
 }
 
-.footer_post{
-  width: 100%;
-  height:auto;
-  overflow: hidden;
-  padding-top: 8px;
-  margin-top: 15%;
-  border-top: 1px dotted #eee;
-
-}
-
-.footer_post a{
-  color: white;
-  line-height: 20px;
-  font-weight: bold;
-  text-decoration: none;
-
-}
-
-.footer_post a:hover{
-  text-decoration: underline;
-}
 
 .datapost{
   color: black;
@@ -102,10 +87,113 @@ margin: 2% auto auto 25%;
 
 }
 
+/*Postagem*/
+
+.img-postagem{
+  margin-top: 2%;
+  width: 100%;
+  height: 600px;
+  background-color: red;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+
+.fundo-postagem{
+  width: 88%;
+  position: absolute;
+  margin-top: 30%;
+  background-color: black;
+  margin-left: 6%;
+}
+
+
+
+.titulo-postagem{
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  margin-top: 0px;
+
+
+}
+
+.titulo-postagem h1{
+  text-transform: uppercase;
+  margin: 2% 0 0 5%;
+  padding: 0 0 12px 0;
+  font-size: 175%;
+  line-height: 1.2;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+.conteudo-postagem{
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  margin-top: 5.1%;
+  padding: 2% 5% 2% 5%;
+
+}
+
+ 
+.conteudo-postagem p{
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 24px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+.post-categoria{
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.meta{
+  line-height: 1;
+}
+
+.meta > div{
+  margin-left: 25px;
+  display: inline;
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: 11px;
+
+}
+
+.autor-post{
+  font-size: 11px;
+  margin-left: 80%;
+
+}
+
+.data-postagem{
+ 
+  font-size: 11px;
+  
+}
+
+.header-post{
+  left: 20%;
+ background-color: red;
+}
+
+
+
+
 
 /*visulizar*/
 .widget {
-
   position: relative;
   clear: both;
   width: auto;
@@ -159,7 +247,6 @@ margin: 2% auto auto 25%;
 
 .widget-table .table {
   margin-bottom: 0;
-
   border: none;
 }
 
@@ -175,7 +262,7 @@ margin: 2% auto auto 25%;
 
 /*Icones dos botoes*/
   .btn-icone{
-  	padding-left: 40px;
+    padding-left: 40px;
   }
 
 .btn-icone2{
@@ -189,12 +276,12 @@ margin: 2% auto auto 25%;
 
 
   .icone input[type=password]{
-  	padding-left: 40px;
+    padding-left: 40px;
   }
 
 
   .icone input[type=email]{
-  	padding-left: 40px;
+    padding-left: 40px;
   }
 
 
@@ -226,7 +313,7 @@ margin: 2% auto auto 25%;
 
 
   .icone2 i{
-  	position:absolute;
+    position:absolute;
     left:20px;
     top:5px;
     padding:25px 8px;
@@ -234,13 +321,13 @@ margin: 2% auto auto 25%;
   }
 
   .icone3 i{
-  	position:absolute;
+    position:absolute;
     left:10px;
     top:5px;
   }
 
 .icone4 i{
-  	position:absolute;
+    position:absolute;
     top: 3px;
     right:10px;
 
@@ -253,32 +340,30 @@ margin: 2% auto auto 25%;
     top: 5px;
   }
 
+  .material-icons.md-dark.md-inactive {
+    font-size: 14px;
+    margin-right: 8px;
+  }
 
-  /*rodape*/
-  .footer {
- position: relative;
- bottom: 0;
- padding: 1%;
- background: rgba(255, 255, 255, 0.40);
- width: 100%;
-}
 
-.fonte1sobre{
+  /*sobre*/
+
+  .fonte1sobre{
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
-  color: white;
+  color: blue;
 }
 
 .fonte2sobre{
   font-size: 60px;
   font-family: 'Anton', sans-serif;
-  color: white;
+  color: blue;
 }
 
 .fonte3sobre{
   font-size: 20px;
   font-family: 'Anton', sans-serif;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -286,8 +371,8 @@ margin: 2% auto auto 25%;
   background-color: #87CEEB;
   background: rgba(0, 0, 0, 0.6);
   position: relative;
-  bottom: 0px; 
-  width: 100%; 
-  height: 100px; 
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
 
 }
