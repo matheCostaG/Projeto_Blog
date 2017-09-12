@@ -57,22 +57,25 @@ margin: 2% 10% 15% 17.5%;
   border-radius: 5px;
   margin-right: 24px;
 }
-
+/*.abrev_texto{
+  max-height: 80px;
+  overflow: hidden;
+}*/
 .content h1{
-  font-size: 125%;
+  font-size: 100%;
   font-weight: bold;
   color: black;
   font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
   margin-bottom: 20px;
-
 }
 
-.content p{
+.content .abrev_texto{
   font-family: tahoma, "Trebuchet Ms", arial;
-  font-size: 13px;
-  color: #999;
+  font-size: 100%;
+  color: #000;
   line-height: 20px;
+
 }
 
 
@@ -134,7 +137,7 @@ margin: 2% 10% 15% 17.5%;
   width: 100%;
   position: absolute;
   background-color: white;
-  margin-top: 5.1%;
+  margin-top: 7%;
   padding: 2% 5% 2% 5%;
 
 }
@@ -162,12 +165,11 @@ margin: 2% 10% 15% 17.5%;
   line-height: 1;
 }
 
-.meta > div{
-  margin-left: 25px;
-  display: inline;
-  text-transform: uppercase;
-  color: #aaa;
-  font-size: 11px;
+
+
+.datapost{
+  color: #6b6b6b;
+  font-size: 89%;
 
 }
 

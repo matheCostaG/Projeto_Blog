@@ -50,6 +50,8 @@ function carregar_postagem(){
     }
   });
 }
+
+// Chama a função carrega postagem
 carregar_postagem();
 // Fecha a função carrega postagem
 });

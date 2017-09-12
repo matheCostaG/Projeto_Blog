@@ -1,31 +1,44 @@
 <?php
-  require_once "includes/header.php";
-  require_once "includes/conexao.php";
-  ?>
 
-  <?php
-  $result = $conn->query("select * from admin as a join publicacao as p on a.id = p.id_admin order by p.data DESC");
-  while ($row = $result->fetch_assoc()){
-    echo "<div class='divcenter text-center'>";
+	require_once "includes/header.php";
+	require_once "includes/conexao.php";
+	$itens_por_pagina = 6;
+	$pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 0;
+  $result = $conn->query("select p.id, titulo, img_postagem, data, nome, MID(texto,1,250) from admin as a join publicacao as p on a.id = p.id_admin order by p.data DESC LIMIT $pagina, $itens_por_pagina ");
+	$num_total = $conn->query("SELECT id FROM publicacao")->num_rows;
+	$num_paginas = ceil($num_total/$itens_por_pagina);
+
+		while ($row = $result->fetch_assoc()){
+    echo "<div class='divcenter'>";
     echo "<ul class='boxposts'  style=' background-size: 100%  auto; background-image: url(imagens/".$row['img_postagem']." );>";
     echo "<li class='list-group-item' >";
-    echo "<span class='content'>";
+    echo "<span class='teste content'>";
     echo "<div class='fundo-titulo'>";
-    echo "<a href='postagem.php'><h1>".$row['titulo']."</h1></a>";
-    echo "<div class='footer_post'>";
-    echo "<strong>".$row['texto']."</strong>";
-    echo "<a class='btn btn-outline-primary' href='postagem.php' role='button'>LEIA MAIS</a>";
-    echo "<span class='datapost'>Data de Publicação: <strong>".$row['data']."</strong></span>";
-    echo "</div>";
+		echo "<span class='datapost'>".$row['data']."</span>";
+    echo "<a class='text-center ' href='postagem.php'><h1>".$row['titulo']."</h1></a>";
+    echo "<div class='abrev_texto text-center texto_valor'>".$row['MID(texto,1,250)']."...</div>";
+		echo "<span class='datapost'>".$row['nome']."</span>";
     echo "</div>";
     echo "</span>";
     echo "</li>";
     echo "</ul>";
     echo "</div>";
-}
-$conn->close();
-  ?>
 
-  <?php
-  require_once "includes/footer.php";
+}
+
+$conn->close();
+?>
+<div class="container">
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+		<?php
+		for ($i=0; $i < $num_paginas; $i++) { ?>
+			<li class='page-item'><a class='page-link' href='index.php?pagina=<?php echo $i; ?>'><?php echo $i+1;?></a></li>
+
+		 <?php } ?>
+  </ul>
+</nav>
+</div>
+<?php
+	require_once "includes/footer.php";
  ?>
