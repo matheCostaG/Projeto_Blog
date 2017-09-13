@@ -4,7 +4,7 @@
 	require_once "includes/conexao.php";
 	$itens_por_pagina = 9;
 	$pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 0;
-  $result = $conn->query("select p.id, titulo, img_postagem, data, nome, MID(texto,1,250) from admin as a join publicacao as p on a.id = p.id_admin order by p.data DESC LIMIT $pagina, $itens_por_pagina ");
+  $result = $conn->query("select p.id, titulo, img_postagem, data, nome, MID(texto,1,250) from admin as a join publicacao as p on a.id = p.id_admin  LIMIT $pagina, $itens_por_pagina ");
 	$num_total = $conn->query("SELECT id FROM publicacao")->num_rows;
 	$num_paginas = ceil($num_total/$itens_por_pagina);
 

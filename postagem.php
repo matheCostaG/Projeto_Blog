@@ -11,19 +11,15 @@
 
    <div class="img-postagem" style="background-image: url(imagens/<?php echo $row['img_postagem']?>)">
    	<div class="fundo-postagem">
-   		<div class="titulo-postagem text-center">
-   			<h1><?php echo $row['titulo']?></h1>
+   		<div class="conteudo-postagem">
+				<h1><?php echo $row['titulo']?></h1>
    			<div class="meta">
    				<div class="data-postagem">
    					<i class="material-icons md-dark md-inactive">date_range</i>
    					<?php echo $row['data'];?>
    					<strong class="autor-post"><?php echo $row['nome'];?></strong>
    				</div>
-   			</div>
-
-   		</div> <!-- tituloPostagem-->
-
-   		<div class="conteudo-postagem">
+   			</div></br>
 				<?php echo $row['texto'];?>
 				<div class="fb-comments" data-href="https://www.facebook.com/matheusdcg.costagontijo" data-width="500" data-numposts="5"></div>
    		</div> <!-- Conteudo postagem -->

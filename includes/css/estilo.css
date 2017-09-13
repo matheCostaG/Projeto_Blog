@@ -112,35 +112,10 @@ margin: 2% 10% 15% 17.5%;
   margin-left: 6%;
 }
 
-
-
-.titulo-postagem{
-  width: 100%;
-  position: absolute;
-  background-color: white;
-  margin-bottom: 10px;
-
-
-}
-
-.titulo-postagem h1{
-  text-transform: uppercase;
-  height: 70px;
-  margin: 2% 0 0 5%;
-  padding: 0 0 12px 0;
-  font-size: 100%;
-  line-height: 1.2;
-  font-family: "Roboto Slab";
-  font-weight: 700;
-  font-style: normal;
-
-}
-
 .conteudo-postagem{
   width: 100%;
   position: absolute;
   background-color: white;
-  margin-top: 109px;
   padding: 2% 5% 2% 5%;
 
 }
