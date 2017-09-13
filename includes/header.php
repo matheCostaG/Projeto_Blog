@@ -27,7 +27,7 @@
         </ul>
         <form class="form-inline my-2 my-lg-0" id="form_buscar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <input class="form-control" name="buscar" type="text" id="buscar" placeholder="Procurar" aria-label="Procurar">
-          <div style="position:absolute; margin-top:150px;">
+          <div style="position:absolute; margin-top:90px;">
             <ul class="list-group" id="resultado"></ul>
           </div>
 

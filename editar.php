@@ -12,7 +12,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     if($id != null && $titulo != null && $texto != null && $data != null){
       if($imagem = $_FILES['imagem_postagem']){
         if($imagem['error']){
-          Usuario::editarPostgem($titulo, $texto, $data, $id, $imagem);
+          Usuario::editarPostagem($titulo, $texto, $data, $id, $imagem);
+          
         }else{
           $pasta = "imagens";
           $fileImagem = $id.".jpg";
@@ -20,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
           if(file_exists("$file")){
             unlink("$file");
           }
-          Usuario::editarPostgem($titulo, $texto, $data, $id, $imagem);
+          Usuario::editarPostagem($titulo, $texto, $data, $id, $imagem);
         }
       }
      }else {

@@ -71,8 +71,9 @@ require_once "classes/config.php";
       require_once "includes/conexao.php";
       $stmt = $conn->prepare("INSERT INTO publicacao (titulo, texto, id_admin, data) VALUES(?,?,?,?)");
       $stmt->bind_param('ssis', $titulo, $texto, $id, $data);
-      if($stmt->execute()){
-        echo "<script>alert(Dados inseridos);</script>";
+      if($stmt->execute() == false){
+        echo "<script>alert('Erro ao adicinar postagem');</script>";
+        die();
       }
       $idPubli = $stmt->insert_id;
       if($imagem['error']){
@@ -94,11 +95,14 @@ require_once "classes/config.php";
     }
 
 
-    public static function editarPostgem($titulo, $texto, $data, $id, $imagem){
+    public static function editarPostagem($titulo, $texto, $data, $id, $imagem){
       require_once "includes/conexao.php";
       $stmt = $conn->prepare("UPDATE publicacao SET titulo = ? , texto = ?, data = ? where id = ?");
-      $stmt->bind_param("sss", $titulo, $texto, $data, $id);
-      $stmt->execute();
+      $stmt->bind_param("sssi", $titulo, $texto, $data, $id);
+      if($stmt->execute() == false){
+        echo "<script>alert('Erro ao Editar postagem');</script>";
+        die();
+      }
       $pastaImagens = 'imagens';
       if(!is_dir($pastaImagens)){
         mkdir($pastaImagens);
@@ -109,7 +113,7 @@ require_once "classes/config.php";
         $conn->query("UPDATE publicacao SET img_postagem = '$imagem_postagem' WHERE id = $id");
         $conn->close();
       }
-      header("Location: visualizar.php");
+
     }
 
   }

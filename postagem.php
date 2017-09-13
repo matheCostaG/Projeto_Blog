@@ -25,6 +25,17 @@
 
    		<div class="conteudo-postagem">
 				<?php echo $row['texto'];?>
+				<div class="fb-comments" data-href="https://www.facebook.com/matheusdcg.costagontijo" data-width="500" data-numposts="5"></div>
    		</div> <!-- Conteudo postagem -->
+
    	</div>
-   </div>
+	</div></br>
+
+	 <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10&appId=225178541343907";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
