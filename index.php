@@ -1,7 +1,8 @@
 <?php
+
 	require_once "includes/header.php";
 	require_once "includes/conexao.php";
-	$itens_por_pagina = 6;
+	$itens_por_pagina = 9;
 	$pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 0;
   $result = $conn->query("select p.id, titulo, img_postagem, data, nome, MID(texto,1,250) from admin as a join publicacao as p on a.id = p.id_admin order by p.data DESC LIMIT $pagina, $itens_por_pagina ");
 	$num_total = $conn->query("SELECT id FROM publicacao")->num_rows;
@@ -14,19 +15,16 @@
     echo "<span class='teste content'>";
     echo "<div class='fundo-titulo'>";
 		echo "<span class='datapost'>".$row['data']."</span>";
-    echo "<a class='text-center ' href='postagem.php'><h1>".$row['titulo']."</h1></a>";
+    echo "<a class='text-center ' href='postagem.php?idpostagem=".$row['id']."'><h1>".$row['titulo']."</h1></a>";
     echo "<div class='abrev_texto text-center texto_valor'>".$row['MID(texto,1,250)']."...</div>";
-		echo "";
-		echo "<button class='btn btn-link'>Ler mais...</button><br>";
+		echo "<div class='text-center'><a href='postagem.php?idpostagem=".$row['id']."' class='btn-mais'>Ler mais</a></div><br>";
 		echo "<span class='datapost'>".$row['nome']."</span>";
     echo "</div>";
-
     echo "</span>";
     echo "</li>";
     echo "</ul>";
     echo "</div>";
-
-}
+	}
 
 $conn->close();
 ?>

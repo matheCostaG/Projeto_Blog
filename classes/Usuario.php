@@ -92,9 +92,13 @@ require_once "classes/config.php";
         echo "Erro no upload da imagem";
       }
     }
+
+
     public static function editarPostgem($titulo, $texto, $data, $id, $imagem){
       require_once "includes/conexao.php";
-      $conn->query("UPDATE publicacao SET titulo = '$titulo' , texto = '$texto', data = '$data' where id = $id");
+      $stmt = $conn->prepare("UPDATE publicacao SET titulo = ? , texto = ?, data = ? where id = ?");
+      $stmt->bind_param("sss", $titulo, $texto, $data, $id);
+      $stmt->execute();
       $pastaImagens = 'imagens';
       if(!is_dir($pastaImagens)){
         mkdir($pastaImagens);
