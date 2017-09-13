@@ -113,7 +113,7 @@ require_once "classes/config.php";
         $conn->query("UPDATE publicacao SET img_postagem = '$imagem_postagem' WHERE id = $id");
         $conn->close();
       }
-
+      header("Location: visualizar.php");
     }
 
   }
